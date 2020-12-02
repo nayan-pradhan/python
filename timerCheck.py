@@ -1,4 +1,4 @@
-# Concept: Outer loop should being larger and inner loop being smaller takes more time to execute then vice versa
+# Concept: A larger range in outer loop (i) should take longer to execute than a larger range in inner loop (j) with the same range values
 
 import time 
 
