@@ -59,5 +59,11 @@ try:
 
 		time.sleep(1)
 
+		# print(remaining_time_sec)
+		if remaining_time_sec == 13580:
+			print("Happy New Year")
+			time.sleep(60)
+		
+
 except KeyboardInterrupt:
 	exit()
