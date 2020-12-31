@@ -55,15 +55,14 @@ try:
 		else:
 			remaining_sec = ""
 
-		print("Time remaining: {} {} {} {}".format(remaining_days, remaining_hrs, remaining_min, remaining_sec), end="\r")
-
-		time.sleep(1)
-
 		# print(remaining_time_sec)
-		if remaining_time_sec == 13580:
-			print("Happy New Year")
+		if remaining_time_sec == 0:
+			print("Happy New Year!")
+			print ("----------x----------x----------x----------x----------x----------")
 			time.sleep(60)
-		
+		else:
+			print("Time remaining: {} {} {} {}".format(remaining_days, remaining_hrs, remaining_min, remaining_sec), end="\r")
+			time.sleep(1)
 
 except KeyboardInterrupt:
 	exit()
