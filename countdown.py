@@ -11,7 +11,7 @@ try:
 		date_now = datetime.today()
 		date_now_timestamp = int(date_now.timestamp())
 
-		new_year_date = datetime(year=date_now.year + 1, month=1, day=1, hour=0, minute=0, second=0)
+		new_year_date = datetime(year=date_now.year+1, month=1, day=1, hour=0, minute=0, second=0)
 		new_year_timestamp = int(new_year_date.timestamp())
 
 		remaining_time_sec = new_year_timestamp - date_now_timestamp
@@ -55,9 +55,9 @@ try:
 		else:
 			remaining_sec = ""
 
-		print("Time remaining: {} {} {} {}".format(remaining_days, remaining_hrs, remaining_min, remaining_sec))
+		print("Time remaining: {} {} {} {}".format(remaining_days, remaining_hrs, remaining_min, remaining_sec), end="\r")
 
 		time.sleep(1)
-		
+
 except KeyboardInterrupt:
 	exit()
