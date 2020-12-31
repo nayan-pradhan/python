@@ -55,7 +55,6 @@ try:
 		else:
 			remaining_sec = ""
 
-		# print(remaining_time_sec)
 		if remaining_time_sec == 0:
 			print("Happy New Year!")
 			print ("----------x----------x----------x----------x----------x----------")
